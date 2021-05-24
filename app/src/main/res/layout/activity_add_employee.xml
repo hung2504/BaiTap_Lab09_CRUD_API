@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddEmployee">
+
+    <TextView
+        android:id="@+id/tvAddEmp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="Add Employee"
+        android:textColor="#E91E63"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
+    <TextView
+        android:id="@+id/tvName1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name: "
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/tvAddEmp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="30dp"></TextView>
+    <TextView
+        android:id="@+id/tvGender1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender: "
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/tvName1"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp"></TextView>
+    <TextView
+        android:id="@+id/tvMail1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email: "
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/tvGender1"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp"></TextView>
+    <TextView
+        android:id="@+id/tvAge1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Age: "
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/tvMail1"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp"></TextView>
+    <EditText
+        android:id="@+id/edtName1"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:hint="Input Name...."
+        android:paddingLeft="20dp"
+        android:background="@drawable/custem_edt"
+        app:layout_constraintTop_toTopOf="@id/tvName1"
+        app:layout_constraintStart_toEndOf="@id/tvName1"
+        app:layout_constraintBottom_toBottomOf="@id/tvName1"
+        app:layout_constraintStart_toStartOf="@id/edtGender1"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginRight="30dp"></EditText>
+    <EditText
+        android:id="@+id/edtGender1"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:hint="Input Gender...."
+        android:paddingLeft="20dp"
+        android:background="@drawable/custem_edt"
+        app:layout_constraintTop_toTopOf="@id/tvGender1"
+        app:layout_constraintStart_toEndOf="@id/tvGender1"
+        app:layout_constraintBottom_toBottomOf="@id/tvGender1"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="15dp"></EditText>
+    <EditText
+        android:id="@+id/edtEmail1"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:hint="Input Email...."
+        android:paddingLeft="20dp"
+        android:background="@drawable/custem_edt"
+        app:layout_constraintTop_toTopOf="@id/tvMail1"
+        app:layout_constraintStart_toEndOf="@id/tvMail1"
+        app:layout_constraintBottom_toBottomOf="@id/tvMail1"
+        app:layout_constraintStart_toStartOf="@id/edtGender1"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginRight="30dp"></EditText>
+    <EditText
+        android:id="@+id/edtAge1"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:hint="Input Age...."
+        android:paddingLeft="20dp"
+        android:background="@drawable/custem_edt"
+        app:layout_constraintTop_toTopOf="@id/tvAge1"
+        app:layout_constraintStart_toEndOf="@id/tvAge1"
+        app:layout_constraintBottom_toBottomOf="@id/tvAge1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/edtGender1"
+        android:layout_marginRight="30dp"></EditText>
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:text="Save"
+        android:background="@drawable/custem_button"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        app:backgroundTint="#2196F3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtAge1"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="50dp"></Button>
+
+    <Button
+        android:id="@+id/btnCancel1"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/custem_button"
+        android:text="Cancel"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        app:backgroundTint="#F44336"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtAge1"></Button>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
