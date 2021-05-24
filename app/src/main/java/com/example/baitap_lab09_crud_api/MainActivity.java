@@ -65,7 +65,6 @@ public class MainActivity extends AppCompatActivity {
                             list.add(e);
                             break;
                         }
-                        else list = null;
                     }
                 }else{
                     Toast.makeText(MainActivity.this, "Bạn chưa nhập ID", Toast.LENGTH_SHORT).show();
